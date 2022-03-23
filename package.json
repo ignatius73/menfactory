@@ -1,0 +1,21 @@
+{
+  "name": "menfactory",
+  "version": "1.0.0",
+  "description": "Mongo-Express-Node Project Factory with agnostic Frontend",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "menfactory"
+  },
+  "author": "Gabriel Garcia",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.5"
+  }
+}
