@@ -4,9 +4,10 @@ import axios from 'axios';
 import path from 'path';
 import  express  from "express";
 import { Http2ServerRequest } from 'http2';
+import { usuariosRouter } from './routes/usuarios.js';
 
-var client_id = process.env.CLIENT_ID;
-var client_secret = process.env.CLIENT_SECRET;
+/* var client_id = process.env.CLIENT_ID;
+var client_secret = process.env.CLIENT_SECRET; */
 
 const app = express();
 
@@ -35,6 +36,8 @@ app.get('/token',async(req, res) => {
     
 
 });
+
+app.use('/usuarios', usuariosRouter)
 
 app.listen(process.env.PORT, ()=>{
     console.log(`Escuchando conexiones en el puerto ${process.env.PORT}`)
